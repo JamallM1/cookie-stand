@@ -3,11 +3,32 @@ let salesData = document.getElementById('SalesData');
 console.log(salesData);
 
 
+
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 function getRandomInt(min ,max) {
   return Math.floor(Math.random() * (max-min+1))+min;
 }
+// function Salmon ( name, minCust, maxCust, avg) {
+
+//   this.name = name;
+//   this.minCust = minCust;
+//   this.maxCust = maxCust;
+//   this.avg = avg;
+//   this.custArr = [];
+//   this.cookies = [];
+//   this.getCust = function(){
+//     for(let i = 0; i < hours.length; i++){
+//       let number = getRandomInt(this.minCust, this.maxCust);
+//       this.custArr.push(number);
+  
+//     }
+//   function Salmon(){
+
+//   }
+
+
+
 
 
 let seattle = {
@@ -54,7 +75,6 @@ let seattle = {
     //salesData.appendChild(test);
   }
 };
-
 seattle.getCust();
 seattle.render();
 console.log(seattle);
@@ -230,4 +250,3 @@ let lima = {
 
 lima.render();
 lima.getCust();
-console.log(lima);
