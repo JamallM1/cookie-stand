@@ -1,0 +1,27 @@
+body {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+table{
+  text-align: center;
+  border: #000;
+
+}
+
+th {
+  background-color: #444;
+  color: rgb(22, 42, 59);
+  padding: 20px;
+  border: #000;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav {
+  width: 960px;
+  margin: auto;
+}
