@@ -1,6 +1,14 @@
 
 let tableElem = document.getElementById('table');
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+
+let myForm = document.getElementById('my-form');
+let myFormSection = document.getElementById('table-names');
+
+LocationSales.prototype.getCustNumber = function() {
+  return Math.floor(Math.random() * (this.maxCust-this.minCust+1)+this.minCust);
+} ;
+
 //console.log(salesData);
 
 let locations = [];
@@ -15,10 +23,6 @@ function LocationSales ( name, minCust, maxCust, avg ){
 
   locations.push(this);
 }
-
-LocationSales.prototype.getCustNumber = function() {
-  return Math.floor(Math.random() * (this.maxCust-this.minCust+1)+this.minCust);
-} ;
 
 LocationSales.prototype.getTotalCookies = function () {
   for(let i = 0; i < hours.length; i++){
@@ -79,6 +83,22 @@ function renderAllLocations(){
 
 displayHeader();
 renderAllLocations();
+
+
+function handleSubmit(event){
+  event.preventDefault();
+  let name = event.target.FullName.value;
+  let LocationSales = event.target.interests.value;
+
+  let newLocationSales = new LocationSales (name);
+
+  newLocationSales.getTotalCookies();
+  newLocationSales.render();
+
+  myFormSection.reset();
+}
+
+myForm.addEventListener('submit', handleSubmit);
 
 // let time = document.createElement('li');
 //    time.textContent = hours[i] + - this.cookies[i] + '     cookies';
