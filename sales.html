@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salmon Cookies</title>
-  <link rel="stylesheet"href = "style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h2><a href="index.html">Home</a></h2>
-  <section id = "SalesData"></section>
+  <section id="SalesData"></section>
   <table id="table">
   </table>
-  <script src="js/app.js"></script>
   <footer>
     <form id="my-form">
-        <fieldset>
-         <legend>Store Submission <Form></Form></legend>
-          <label for="fullName">Full Name</label>
-          <input id="fullName" type="text" name="fullName">
-          <label for="store Location">Store Location</label>
-          <input id="Store Location" type="text" name="StoreName">
-          <label>Sales Per Hour
-            <input type="number" name="age">
-          </label>
-          </select>
-          <button type="submit">Submit</button>
-          </fieldset>
-  
+      <fieldset>
+        <legend>Store Submission <Form></Form>
+        </legend>
+
+        <label for="location">Location</label>
+        <input id="location" type="text" name="location">
+
+        <label for="minCustomer">Min Customer</label>
+        <input id="minCustomer" type="number" name="minCustomer">
+
+
+        <label for="maxCustomer">Max Customer</label>
+        <input id="maxCustomer" type="number"
+        name="maxCustomer">
+
+        <label for="averageCustomer">Average Customer</label>
+        <input id="averageCustomer" type="number" name="averageCustomer">
+        </select>
+        <button type="submit">Submit</button>
+      </fieldset>
+
     </form>
     <h2>Salmon Shirts for Sale</h2>
-    <img src="https://raw.githubusercontent.com/codefellows/seattle-code-201d86/b403f4f40864a7500ff9213244ae58d13c46e9c8/class-08/lab-b/image-assets/shirt.jpg" alt="shirt">
+    <img
+      src="https://raw.githubusercontent.com/codefellows/seattle-code-201d86/b403f4f40864a7500ff9213244ae58d13c46e9c8/class-08/lab-b/image-assets/shirt.jpg"
+      alt="shirt">
+    <script src="js/app.js"></script>
   </footer>
 </body>
+
 </html>
